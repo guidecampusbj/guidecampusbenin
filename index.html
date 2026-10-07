@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guide Campus Bénin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide Campus Bénin : allocation universitaire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0b6b3a;--y:#f5b800;--r:#d62828;--bg:#fbfaf5;--ink:#1c2420;--mut:#5d6862;--card:#fff;--line:#e3e0d2}
+@media(prefers-color-scheme:dark){:root{--g:#4fd08a;--y:#ffd04a;--r:#ff6b6b;--bg:#111815;--ink:#eef2ee;--mut:#a5b0a9;--card:#1a2420;--line:#2b3832}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.7 Poppins,system-ui,sans-serif}
+.stripe{height:8px;background:linear-gradient(90deg,var(--g) 33%,var(--y) 33% 66%,var(--r) 66%)}
+.hero{background:var(--g);color:#fff;padding:44px 20px 40px}
+.wrap{max-width:700px;margin:0 auto}
+.hero h1{font:800 clamp(27px,7vw,40px)/1.2 Poppins,sans-serif;margin:0 0 14px}
+.hero h1 span{color:var(--y)}
+.hero p{margin:0;font-size:18px;opacity:.95}
+main{padding:10px 20px 60px}
+h2{font:800 22px/1.3 Poppins,sans-serif;color:var(--g);margin:40px 0 12px;padding-bottom:8px;border-bottom:4px solid var(--y)}
+h2.red{color:var(--r);border-color:var(--r)}
+li{margin:8px 0}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:16px 0}
+.pay{border:3px solid var(--y);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.price{font:800 44px/1 Poppins,sans-serif;color:var(--g)}
+.num{font:800 24px Poppins,sans-serif;color:var(--r);word-break:break-all}
+input,button{font:inherit;padding:14px;border-radius:10px;border:2px solid var(--line);width:100%;margin-top:10px}
+input{background:var(--bg);color:var(--ink)}
+button{background:var(--g);color:#fff;border-color:var(--g);font-weight:800;cursor:pointer;font-size:17px}
+button:focus-visible,input:focus-visible{outline:3px solid var(--y);outline-offset:2px}
+.msg{color:var(--r);font-weight:600;min-height:1.5em;margin:8px 0 0}
+.tip{background:rgba(245,184,0,.18);border-left:5px solid var(--y);padding:14px 16px;border-radius:8px;margin:18px 0}
+.err{background:rgba(214,40,40,.08);border-left:5px solid var(--r);padding:12px 14px;border-radius:8px;margin:10px 0}
+.steps{list-style:none;padding:0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-left:52px;margin:16px 0}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;display:grid;place-items:center}
+.check{list-style:none;padding:0}.check li:before{content:"\2610\00a0\00a0";color:var(--g);font-weight:800}
+.small{font-size:13.5px;color:var(--mut)}
+ul.ok{list-style:none;padding:0}ul.ok li:before{content:"\2714\00a0\00a0";color:var(--g);font-weight:800}
+</style>
 </head>
 <body>
-  <h1>Bienvenue sur Guide Campus Bénin</h1>
-  <p>Ma première page en ligne.</p>
+<div class="stripe"></div>
+<div class="hero"><div class="wrap">
+<h1>Ne perds pas ton allocation universitaire à cause <span>d'une simple erreur</span></h1>
+<p>Le guide complet pour réussir ta demande en ligne, éviter les pièges et valider ton inscription.</p>
+</div></div>
+<main><div class="wrap">
+<div id="lock">
+<h2>Pourquoi ce guide ?</h2>
+<p>Au Bénin, <b>sans demande en ligne faite dans les délais, il n'y a pas d'allocation</b>. Chaque année, des étudiants passent à côté pour des raisons évitables : une date ratée, un changement de filière, une fiche non imprimée. Ce guide rassemble tout au même endroit, en langage simple.</p>
+<h2>Ce que tu vas trouver dedans</h2>
+<ul class="ok">
+<li><b>Comment fonctionne l'allocation</b> : bourses, aides universitaires, quotas et classement</li>
+<li><b>Le calendrier</b> des dernières années, pour ne pas rater la date</li>
+<li><b>Ta liste de préparation</b> : tout ce qu'il faut avoir avant de commencer</li>
+<li><b>Les 6 étapes détaillées</b> de la demande en ligne, avec les astuces</li>
+<li><b>Les 10 erreurs</b> qui font perdre l'allocation, et comment les éviter</li>
+<li><b>La validation de ton inscription</b> à l'université, étape par étape</li>
+<li><b>Les questions fréquentes</b> et une check-list finale</li>
+</ul>
+<div class="box"><b>Un avant-goût gratuit :</b> après ta demande, imprime ta fiche et garde la preuve de paiement. Sans elles, tu n'as rien à montrer en cas de problème. Le reste du guide t'évite d'autres pièges de ce genre.</div>
+
+<h2>Reçois ton guide en 3 minutes</h2>
+<div class="box pay">
+<div class="price">250 F</div>
+<p style="margin:6px 0 0">Un seul paiement. Tout le guide, à relire quand tu veux.</p>
+<ol class="steps" style="margin-top:18px">
+<li><b>Paie 250 F</b> par Moov Money au numéro<br><span class="num">01 64 67 81 07</span></li>
+<li><b>Envoie ta capture de paiement</b> par SMS ou WhatsApp à ce même numéro</li>
+<li><b>Reçois ton code</b> et saisis-le ici</li>
+</ol>
+<label for="code"><b>Ton code d'accès</b></label>
+<input id="code" type="text" autocomplete="off" autocapitalize="characters" placeholder="Saisis ton code ici">
+<button id="go" type="button">Ouvrir le guide</button>
+<p class="msg" id="msg" role="alert"></p>
+</div>
+<p class="small">Les 250 F paient uniquement ce guide. Les frais d'étude de dossier de l'allocation se paient séparément sur la plateforme officielle. Ce guide est indépendant et n'est pas affilié au ministère.</p>
+</div>
+<div id="guide" hidden></div>
+</div></main>
+<div class="stripe"></div>
+<script>
+var D={"s": "mXzLcDdA2xGqD4sqOPcFww==", "i": "ywYy0YoR5mnal3sm", "c": "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", "n": 200000};
+function d(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})}
+async function unlock(){
+ var m=document.getElementById('msg'),v=document.getElementById('code').value.trim();
+ m.textContent='';
+ if(!v){m.textContent="Saisis ton code d'accès.";return}
+ try{
+  var k=await crypto.subtle.importKey('raw',new TextEncoder().encode(v),'PBKDF2',false,['deriveKey']);
+  var key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:d(D.s),iterations:D.n,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt']);
+  var p=await crypto.subtle.decrypt({name:'AES-GCM',iv:d(D.i)},key,d(D.c));
+  var g=document.getElementById('guide');g.innerHTML=new TextDecoder().decode(p);g.hidden=false;
+  document.getElementById('lock').hidden=true;window.scrollTo(0,0);
+ }catch(x){m.textContent='Code incorrect. Vérifie-le et réessaie.'}
+}
+document.getElementById('go').addEventListener('click',unlock);
+document.getElementById('code').addEventListener('keydown',function(e){if(e.key==='Enter')unlock()});
+</script>
 </body>
 </html>
